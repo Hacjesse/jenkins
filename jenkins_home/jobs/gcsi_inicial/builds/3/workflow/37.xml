@@ -1,0 +1,85 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@839.v35e2736cfd5c">
+  <node class="org.jenkinsci.plugins.workflow.graph.FlowEndNode" plugin="workflow-api@1213.v646def1087f9">
+    <parentIds>
+      <string>36</string>
+    </parentIds>
+    <id>37</id>
+    <startId>2</startId>
+    <result>
+      <name>FAILURE</name>
+      <ordinal>2</ordinal>
+      <color>RED</color>
+      <completeBuild>true</completeBuild>
+    </result>
+  </node>
+  <actions>
+    <wf.a.ErrorAction plugin="workflow-api@1213.v646def1087f9">
+      <error class="hudson.AbortException">
+        <detailMessage>script returned exit code -2</detailMessage>
+        <stackTrace>
+          <trace>org.jenkinsci.plugins.workflow.steps.durable_task.DurableTaskStep$Execution.handleExit(DurableTaskStep.java:667)</trace>
+          <trace>org.jenkinsci.plugins.workflow.steps.durable_task.DurableTaskStep$Execution.check(DurableTaskStep.java:613)</trace>
+          <trace>org.jenkinsci.plugins.workflow.steps.durable_task.DurableTaskStep$Execution.run(DurableTaskStep.java:557)</trace>
+          <trace>java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)</trace>
+          <trace>java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)</trace>
+          <trace>java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)</trace>
+          <trace>java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)</trace>
+          <trace>java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)</trace>
+          <trace>java.base/java.lang.Thread.run(Thread.java:829)</trace>
+        </stackTrace>
+        <suppressedExceptions>
+          <wf.a.ErrorAction_-ErrorId>
+            <stackTrace/>
+            <suppressedExceptions class="empty-list"/>
+            <uuid>c45865ab-b82a-4747-bb76-b54becffd1d1</uuid>
+          </wf.a.ErrorAction_-ErrorId>
+          <java.io.IOException>
+            <detailMessage>Failed to kill container &apos;a64e8e1bd16c9a1a297091508b6f3ae95c2a14cf7084cbc1d4d676fbcf597ad6&apos;.</detailMessage>
+            <stackTrace>
+              <trace>org.jenkinsci.plugins.docker.workflow.client.DockerClient.stop(DockerClient.java:187)</trace>
+              <trace>org.jenkinsci.plugins.docker.workflow.WithContainerStep.destroy(WithContainerStep.java:111)</trace>
+              <trace>org.jenkinsci.plugins.docker.workflow.WithContainerStep.access$400(WithContainerStep.java:77)</trace>
+              <trace>org.jenkinsci.plugins.docker.workflow.WithContainerStep$Callback.finished(WithContainerStep.java:415)</trace>
+              <trace>org.jenkinsci.plugins.workflow.steps.BodyExecutionCallback$TailCall.onFailure(BodyExecutionCallback.java:128)</trace>
+              <trace>org.jenkinsci.plugins.workflow.cps.CpsBodyExecution$FailureAdapter.receive(CpsBodyExecution.java:355)</trace>
+              <trace>com.cloudbees.groovy.cps.impl.ThrowBlock$1.receive(ThrowBlock.java:66)</trace>
+              <trace>com.cloudbees.groovy.cps.impl.LocalVariableBlock$LocalVariable.get(LocalVariableBlock.java:39)</trace>
+              <trace>com.cloudbees.groovy.cps.LValueBlock$GetAdapter.receive(LValueBlock.java:30)</trace>
+              <trace>com.cloudbees.groovy.cps.impl.LocalVariableBlock.evalLValue(LocalVariableBlock.java:28)</trace>
+              <trace>com.cloudbees.groovy.cps.LValueBlock$BlockImpl.eval(LValueBlock.java:55)</trace>
+              <trace>com.cloudbees.groovy.cps.LValueBlock.eval(LValueBlock.java:16)</trace>
+              <trace>com.cloudbees.groovy.cps.Next.step(Next.java:83)</trace>
+              <trace>com.cloudbees.groovy.cps.Continuable$1.call(Continuable.java:152)</trace>
+              <trace>com.cloudbees.groovy.cps.Continuable$1.call(Continuable.java:146)</trace>
+              <trace>org.codehaus.groovy.runtime.GroovyCategorySupport$ThreadCategoryInfo.use(GroovyCategorySupport.java:136)</trace>
+              <trace>org.codehaus.groovy.runtime.GroovyCategorySupport.use(GroovyCategorySupport.java:275)</trace>
+              <trace>com.cloudbees.groovy.cps.Continuable.run0(Continuable.java:146)</trace>
+              <trace>org.jenkinsci.plugins.workflow.cps.SandboxContinuable.access$001(SandboxContinuable.java:18)</trace>
+              <trace>org.jenkinsci.plugins.workflow.cps.SandboxContinuable.run0(SandboxContinuable.java:51)</trace>
+              <trace>org.jenkinsci.plugins.workflow.cps.CpsThread.runNextChunk(CpsThread.java:187)</trace>
+              <trace>org.jenkinsci.plugins.workflow.cps.CpsThreadGroup.run(CpsThreadGroup.java:420)</trace>
+              <trace>org.jenkinsci.plugins.workflow.cps.CpsThreadGroup$2.call(CpsThreadGroup.java:330)</trace>
+              <trace>org.jenkinsci.plugins.workflow.cps.CpsThreadGroup$2.call(CpsThreadGroup.java:294)</trace>
+              <trace>org.jenkinsci.plugins.workflow.cps.CpsVmExecutorService$2.call(CpsVmExecutorService.java:67)</trace>
+              <trace>java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)</trace>
+              <trace>hudson.remoting.SingleLaneExecutorService$1.run(SingleLaneExecutorService.java:139)</trace>
+              <trace>jenkins.util.ContextResettingExecutorService$1.run(ContextResettingExecutorService.java:28)</trace>
+              <trace>jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:68)</trace>
+              <trace>jenkins.util.ErrorLoggingExecutorService.lambda$wrap$0(ErrorLoggingExecutorService.java:51)</trace>
+              <trace>java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)</trace>
+              <trace>java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)</trace>
+              <trace>java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)</trace>
+              <trace>java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)</trace>
+              <trace>java.base/java.lang.Thread.run(Thread.java:829)</trace>
+            </stackTrace>
+            <suppressedExceptions class="empty-list"/>
+          </java.io.IOException>
+        </suppressedExceptions>
+      </error>
+    </wf.a.ErrorAction>
+    <wf.a.TimingAction plugin="workflow-api@1213.v646def1087f9">
+      <startTime>1686268625976</startTime>
+    </wf.a.TimingAction>
+  </actions>
+</Tag>
