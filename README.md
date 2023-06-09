@@ -1,1 +1,1 @@
-Projeto jenkins
+O arquivo "DocumentacaoJenkins.pdf" descreve o processo de configuração do ambiente para instalação do Jenkins com Docker e a configuração de uma pipeline de construção (build) de uma aplicação em ReactJs que utilize um agente em Node em Docker.
